@@ -1,0 +1,70 @@
+---
+title: "Marvel Trading Card"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  html_document:
+    includes:
+      in_header: "~/MarvelApp/MarvelCharacterSearch/header.html"
+      after_body: "~/MarvelApp/MarvelCharacterSearch/footer.html"
+params:
+  set_author: "Stan Lee"
+  n: NA
+  s: NA
+  l: NA
+author: "`r str_to_title(params$set_author, locale='en')`"
+---
+```{js, echo=FALSE}
+$('.title').css('color', 'red')
+```
+
+
+```{css, echo=FALSE}
+body {
+  color: red;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.myClass {
+  color: blue;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 15px;
+  
+}
+```
+
+```{js, echo=FALSE}
+$('.author').css('color', 'gold')
+```
+
+
+```{r include=FALSE}
+knitr::opts_chunk$set(comment = NA)
+library(stringr)
+```
+
+<hr>
+
+<center><h2>Biography: "`r str_to_title(params$set_author, locale='en')`"</h2></center>
+
+<hr>
+
+
+<blockquote class="myClass">
+
+"`r params$l`"
+
+</blockquote>
+
+
+<center><h2>"`r str_to_title(params$set_author, locale='en')`"</h2></center>
+
+<center>
+```{r echo=FALSE, fig.cap= str_to_title(params$set_author), out.width = '400px',out.height="400px"}
+
+image <- params$s
+
+knitr::include_graphics(image,auto_pdf = TRUE)
+
+```
+</center>
+

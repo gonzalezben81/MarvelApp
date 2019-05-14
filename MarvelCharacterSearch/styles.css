@@ -1,0 +1,17 @@
+body {
+  background-color: #fff;
+  background-image: url("http://www.thegeekgeneration.com/wp-content/uploads/2009/12/thumbnail-marvel-character-logo.jpg");
+
+}
+
+#myid1{
+  background-color: lightblue;
+  /*background-image: url("http://www.thegeekgeneration.com/wp-content/uploads/2009/12/thumbnail-marvel-character-logo.jpg");*/
+}
+
+
+#myid2{
+  background-image:url("https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Avengers_%28Marvel_Comics%29_vol_3_num_38.jpg/220px-Avengers_%28Marvel_Comics%29_vol_3_num_38.jpg");
+  background-size: cover;
+}
+
