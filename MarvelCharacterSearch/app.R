@@ -26,8 +26,9 @@ ui <- fluidPage(
   # Sidebar with a slider input for number of bins 
   sidebarLayout(
     sidebarPanel(
-      helpText("Enter the name of the Marvel Comics Superhero you want to search for and click",br(),
-               "Get Bio Info:"),
+      helpText("Enter the name of the Marvel Comics Superhero you want to search for and click"),
+               hr(),
+               includeHTML("include.html"),
       textInput(inputId = "character_name",label = "Character Name:",value = "spider-man",width = "250px"),
       hr(),
       actionButton(inputId = "get_data",label = "Get Bio Info:"),
