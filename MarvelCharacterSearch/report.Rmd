@@ -11,6 +11,7 @@ params:
   n: NA
   s: NA
   l: NA
+  comic_events: NA
 author: "`r str_to_title(params$set_author, locale='en')`"
 ---
 ```{js, echo=FALSE}
@@ -68,3 +69,68 @@ knitr::include_graphics(image,auto_pdf = TRUE)
 ```
 </center>
 
+<hr>
+
+<center><h2>Series `r str_to_title(params$set_author, locale='en')` is part of:</h2></center>
+
+<hr>
+
+
+<div class="container">
+<div class="row">
+<div class="col-sm-4">
+<h4>`r params$comic_events$title_one`</h4>
+<img id="myImage"  src="`r params$comic_events$one`" height="300" width="300">
+<blockquote class="myClass">
+
+"`r params$comic_events$descrip_one`"
+
+</blockquote>
+</div>
+<div class="col-sm-4">
+<h4>`r params$comic_events$title_two`</h4>
+<img id="myImage"  src="`r params$comic_events$two`" height="300" width="300">
+<blockquote class="myClass">
+
+"`r params$comic_events$descrip_two`"
+
+</blockquote>
+</div>
+<div class="col-sm-4">
+<h4>`r params$comic_events$title_three`</h4>
+<img id="myImage"  src="`r params$comic_events$three`" height="300" width="300">
+<blockquote class="myClass">
+
+"`r params$comic_events$descrip_three`"
+
+</blockquote>
+</div>
+<div class="col-sm-4">
+<h4>`r params$comic_events$title_four`</h4>
+<img id="myImage"  src="`r params$comic_events$four`" height="300" width="300">
+<blockquote class="myClass">
+
+"`r params$comic_events$descrip_four`"
+
+</blockquote>
+</div>
+<div class="col-sm-4">
+<h4>`r params$comic_events$title_five`</h4>
+<img id="myImage"  src="`r params$comic_events$five`" height="300" width="300">
+<blockquote class="myClass">
+
+"`r params$comic_events$descrip_five`"
+
+</blockquote>
+</div>
+<div class="col-sm-4">
+<h4>`r params$comic_events$title_six`</h4>
+<img id="myImage"  src="`r params$comic_events$six`" height="300" width="300">
+<blockquote class="myClass">
+
+"`r params$comic_events$descrip_six`"
+
+</blockquote>
+</div>
+</div>
+</div>
